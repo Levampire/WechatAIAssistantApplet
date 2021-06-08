@@ -91,7 +91,7 @@ page{
   justify-content: center;
   border-radius: 40rpx;
   margin: 0 0 20rpx 0;
-  width: 60rpx;
+  width: 220rpx;
   height: 80rpx;
   
 }
@@ -125,7 +125,7 @@ align-items: center;
   justify-content: center;
   border-radius: 40rpx;
   margin: 0 0 20rpx 0;
-  width: 60rpx;
+  width: 220rpx;
   height: 80rpx;
   
 }
@@ -148,7 +148,7 @@ align-items: center;
   justify-content: center;
   border-radius: 40rpx;
   margin: 0 0 20rpx 0;
-  width: 60rpx;
+  width: 220rpx;
   height: 80rpx;
   
 }

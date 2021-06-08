@@ -102,7 +102,7 @@ page{
    height: 40px;
    font-size: 13px;
    color: #F7BB0E;
-   line-height: 25px;
+   line-height: 40px;
  }
 
  .buttondrcadd{
@@ -114,9 +114,9 @@ page{
    background-color: #F7BB0E;
    width: 155rpx !important;
    height: 45px;
-   font-size: 20px;
+   font-size: 28px;
    font-weight: bold;
-   line-height: 25px;
+   line-height: 45px;
  }
 
  .buttondrc view{
