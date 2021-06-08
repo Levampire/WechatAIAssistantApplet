@@ -4,6 +4,6 @@
 ### 人工智能API 
 源自腾讯云服务免费接口
 ### 项目预览
-![img.png](img.png)
-![img_1.png](img_1.png)
+![IMGMAIN.png](img.png)
+![IMG_II.png](img_1.png)
 ## 后端Egg项目 https://github.com/Levampire/EggJSForWechatAIApp
