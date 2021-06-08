@@ -1,0 +1,25 @@
+{
+  "pages": ["pages/Main/Main",
+    "pages/Trans/Trans",
+    
+    "pages/Chat/Chat",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Drscern/Drscern"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

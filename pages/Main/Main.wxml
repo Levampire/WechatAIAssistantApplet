@@ -1,0 +1,64 @@
+<!--pages/Main/Main.wxml-->
+<!-- 标题栏 -->
+<view class="Whole" >
+  <view class="topbar">
+     <text class="htext">Your\n{{Dates}}</text> 
+     <view class="Head">
+     <open-data type="userAvatarUrl"
+     ></open-data>
+     </view>
+ </view>
+ <!-- 卡片 -->
+  <view class="cardpal">
+    <swiper class="Card" display-multiple-items="1">
+    <!-- 卡片1 -->
+       <swiper-item class="items"     next-margin="100rpx">
+           <view class="C1">
+           <image class="Light" src="../Main/Image/矩形 1.png"  ></image>
+           <text class="Ctext1">Do you feel loney?\n </text>
+           <text class="Ctext">Find us to talk.</text>
+           <text class="Ctext1">AI keeps you good company.</text>
+
+           <image class="img" src="../Main/Image/Chat.png" ></image>
+           </view>   
+        <button class="button" bindtap="Chatpage">ChatNow</button>
+       </swiper-item>
+    <!-- 卡片2 -->
+      <swiper-item class="items">
+           <view class="C2"> 
+           <image class="Light" src="../Main/Image/矩形 1.png"  ></image>
+           <text class="Ctext1">Still can't see any of it?\n </text>
+           <text class="Ctext">Find us to translate.</text>
+           <text class="Ctext1">AI is your interpreter.</text>
+
+           <image class="img" src="../Main/Image/trans.png" ></image>
+           </view>  
+            
+            <button class="button2" bindtap="Transpage">Let'sGo</button>
+       </swiper-item>
+
+    <!-- 卡片3 -->
+            <swiper-item class="items">
+           <view class="C3"> 
+           <image class="Light" src="../Main/Image/矩形 1.png"  ></image>
+           <text class="Ctext1">Want to copy text from an image?\n </text>
+           <text class="Ctext">Find us to drscern.</text>
+           <text class="Ctext1">AI is your recognizer.</text>
+
+           <image class="img3" src="../Main/Image/Drscern.png" ></image>
+           </view>   
+            <button class="button3" bindtap="Drscern">RecoNow</button>
+       </swiper-item>
+    </swiper>
+  </view> 
+ 
+  
+ <!-- 底部栏 -->
+  <view class="Borderline"></view>
+  <view   class="text">
+    <text>Adventure is out there!</text>
+  </view>
+  
+
+</view>
+

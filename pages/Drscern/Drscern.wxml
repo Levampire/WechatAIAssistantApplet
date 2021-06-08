@@ -1,0 +1,34 @@
+<!--pages/Drscern/Drscern.wxml-->
+
+<view class="whole">
+<!-- 显示区域 -->
+<view class="showzone" >
+  <text>上传成功的图片</text>
+  <view class="res"> 
+  <image mode="heightFix"  src="{{imageUrl}}">
+  </image>   
+  </view>
+  <text>识别结果</text>
+  <view class="restext">
+  <textarea  value="{{content1}}" ></textarea>
+  </view >
+</view>
+
+<!-- 底部栏 -->
+  <view class="BottBar">
+     <button class="buttondrc" bindtap="Distinguish">
+        识别
+        </button>
+        <button class="buttondrcadd" bindtap="Choose">
+        +
+        </button>
+        <button class="buttondrc"  bindtap="Tran">
+        翻译
+        </button>
+  </view>
+    
+  
+
+</view>
+
+ 

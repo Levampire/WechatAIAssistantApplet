@@ -1,0 +1,126 @@
+/* pages/Drscern/Drscern.wxss */
+page{
+  height: 100%;
+  background-color: turquoise;
+}
+
+.whole{
+  width: 750rpx;
+  height: 100%;
+  background-color: #FFFF;
+}
+/* 显示区域 */
+.showzone{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  width: 750rpx;
+ 
+}
+.showzone text{
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  height: 30;
+  width: 680rpx;
+  margin-top: 30rpx;
+  margin-left: 35rpx;
+}
+.showzone .res{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+  background-color: bisque;
+  height: 30%;
+  width: 660rpx;
+  margin-top: 30rpx;
+  margin-left: 35rpx;
+  padding:10rpx;
+}
+
+.showzone .res image{
+  border-radius: 20rpx;
+  background-color: bisque;
+  height: 100%;
+  margin: 0;
+}
+.showzone .restext{
+  display: flex;
+  border-radius: 20rpx;
+  background-color: bisque;
+  height: 40%;
+  width: 660rpx;
+  margin-top: 30rpx;
+  margin-left: 35rpx;
+  padding: 10rpx;
+}
+
+.showzone .restext textarea{
+  border-radius: 20rpx;
+  background-color: bisque;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+.showzone textarea{
+  border-radius: 20rpx;
+  background-color: bisque;
+  height: 37%;
+  width: 680rpx;
+  margin-top: 30rpx;
+  margin-left: 35rpx;
+}
+
+/* 底部栏 */
+.BottBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  position: fixed;
+  bottom: 10px;
+  width: 720rpx;
+  height: 70px;
+  background-color:#29282C;
+  border-radius: 20px ;
+  margin-left: 15rpx;
+}
+
+.buttondrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+   border-radius: 18px;
+   background-color: #29282C;
+   border: #F7BB0E 1rpx solid;
+   width: 150rpx !important;
+   height: 40px;
+   font-size: 13px;
+   color: #F7BB0E;
+   line-height: 25px;
+ }
+
+ .buttondrcadd{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+   border-radius: 10px;
+   background-color: #F7BB0E;
+   width: 155rpx !important;
+   height: 45px;
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 25px;
+ }
+
+ .buttondrc view{
+  background-color: #F5F5F5;
+ height: 40px;
+ width: 30rpx;
+ }

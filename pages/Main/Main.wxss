@@ -1,0 +1,182 @@
+/* pages/Chat/Chat.wxss */
+page{
+  background:#FFFFFF ;
+  height:100%;
+  
+
+}
+.Whole{
+ float: top;
+  height: 100%;
+  width: 750rpx;
+}
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#FFFFFF;
+  height: 200rpx;
+  width: 750rpx;
+  
+}
+.htext{
+  margin: 50rpx;
+  font-family:‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  font-size:60rpx;
+  font-weight:bolder;
+  color: Black;
+}
+
+.Head{
+  margin-right: 50rpx;
+  background-color: hotpink;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  overflow:hidden
+}
+
+
+/* Swiper滚动卡片 */
+.cardpal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: khaki;
+  height:75% ;
+  width: 750rpx;
+
+}
+.items{
+  display: flex;
+  flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.Card{
+  display: flex;
+  width: 750rpx;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 4rpx;
+}
+/* 卡片1 */
+.C1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4F3596;
+  border-radius: 40rpx;
+  width: 600rpx;
+  height:900rpx ;
+}
+
+.Ctext{
+  font-family:‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+.Ctext1{
+  font-family:‘Franklin Gothic Medium’, ‘Arial Narrow’, Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 25rpx;
+ 
+}
+
+.button{
+  display: flex;
+  background-color:#FFAE01 ;
+  justify-content: center;
+  border-radius: 40rpx;
+  margin: 0 0 20rpx 0;
+  width: 60rpx;
+  height: 80rpx;
+  
+}
+.Light{
+  width: 200rpx;
+  height: 150rpx;
+}
+.img{
+  width: 600rpx;
+  height: 400rpx;
+  
+}
+/* 卡片2 */
+.C2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+align-items: center;
+  background-color: #1F9CE4;
+  border-radius: 40rpx;
+  width: 600rpx;
+  height:900rpx ;
+}
+.tarnsimg{
+  width: 500rpx;
+  height: 150rpx;
+}
+.button2{
+  display: flex;
+  background-color:#00CFCF;
+  justify-content: center;
+  border-radius: 40rpx;
+  margin: 0 0 20rpx 0;
+  width: 60rpx;
+  height: 80rpx;
+  
+}
+
+/* 卡片3 */
+.C3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+align-items: center;
+  background-color: #e15b88;
+  border-radius: 40rpx;
+  width: 600rpx;
+  height:900rpx ;
+}
+
+.button3{
+  display: flex;
+  background-color:#01B2FE;
+  justify-content: center;
+  border-radius: 40rpx;
+  margin: 0 0 20rpx 0;
+  width: 60rpx;
+  height: 80rpx;
+  
+}
+.img3{
+  width: 560rpx;
+  height: 400rpx;
+  border-radius:  30rpx;
+  
+}
+/* 底部栏 */
+.Borderline{
+  height: 1px;
+  width: 600rpx;
+  background-color:black ;
+  margin-left: 75rpx;
+  margin-right: 75rpx;
+
+  
+
+}
+.text{
+display: flex;
+align-items: center;
+font-weight: bold;
+width: 750rpx;
+height: 100rpx;
+margin-top: 20rpx;
+margin-left: 75rpx;
+margin-right: 75rpx;
+
+}

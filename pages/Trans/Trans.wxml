@@ -1,0 +1,64 @@
+<!--pages/translation/translation.wxml-->
+
+<!-- 切换按钮 -->
+  <view class="tabbar">
+     <view class="{{index==active?'tab cur':'tab'}}" wx:for="{{tabname}}" wx:key="index"  data-index="{{index}}" bindtap="change">
+		 <view class="text">
+		 <text > {{item}}</text>
+		 </view>
+		 <view class="{{index==active?'line':noline}}"></view>
+		 </view>
+  </view>
+  
+  <!-- 切换内容 -->
+  <view class="page">
+      <!-- A页面 -->
+       <view class="{{0==active?'con A':'con'}}">  
+			 <view class="input">
+          <form class="form" bindsubmit="test">
+             <!-- 输入区域 -->
+            
+               <!-- <view class="tittle">
+	             <text>Tap To Input</text>
+	             </view> -->
+                <textarea class="contnet1" value="{{content1}}" placeholder-class="placeholder" placeholder="  请输入待翻译内容"  name="a"></textarea>
+								<!-- 按钮 -->
+	              <view class="Buttare" >
+	                <button class="button" form-type="submit">翻译</button>
+	                <button class="button" bindtap="Insert">粘贴</button>
+	              </view>
+		            <!-- <view class="tittle">
+		            <text>We'll Do The Rest</text>
+		            </view> -->
+	              <!-- 翻译区域 -->
+                <textarea class="contnet2" value="{{content2}}"  placeholder-class="placeholder" placeholder="  翻译结果" name="b">
+             	  </textarea>
+            </form>
+					</view>
+			  </view>
+
+      <!-- B页面 -->
+      <view class="{{1==active?'con B':'con'}}">
+			<view class="input">
+				<form class="form" bindsubmit="test">
+					<!-- 输入区域 -->
+                <textarea class='contnet3{' placeholder='请输入内容' value='{{content}}' placeholder-class="placeholder"
+								bindinput="get"
+								></textarea>
+							<!-- 按钮 -->
+	              <view class="Buttare" >
+									<button class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" 	bindtouchstart="touchStart" bindtouchend="touchEnd">
+      								<text wx:if="{{recordState == false}}" >输入</text>
+      								<text wx:else>结束</text>
+    							</button>
+									<!-- 开始语音 弹出语音图标表示正在录音 -->
+									<cover-view class="startYuyinImage" wx:if="{{recordState == true}}">
+										<cover-image src="../images/img1.jpg"></cover-image>
+										<cover-view>开始语音</cover-view>
+									</cover-view>
+	              </view>
+				</form>
+			</view>
+			</view>
+			
+  </view>

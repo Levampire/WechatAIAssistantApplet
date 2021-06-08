@@ -1,0 +1,50 @@
+<!--pages/chat/chat.wxml-->
+<view class="news" bindtap='outbtn'>
+
+	<view class="historycon">
+		<scroll-view scroll-y="true" class="history" scroll-top="{{scrollTop}}">
+			<block wx:for="{{newslist}}" wx:key="index">
+				<view>{{item.date}}</view>
+				<!--用户消息 -->
+				<view class="chat-news" wx:if="{{item.nickName == userInfo.nickName}}">
+					<view class='my_right'>
+						<block wx:if="{{item.type=='text'}}">
+							<view class='new_txt you'>{{item.content}}</view>
+						</block>
+						<block wx:if="{{item.type=='image'}}">
+							<image class="selectImg" mode="aspectFit" src="{{item.images}}" data-src="{{item.images}}" lazy-load="true" bindtap="previewImg"></image>
+						</block>
+					</view>
+					<view class="my_right_info">
+					  <view><open-data type="userAvatarUrl"
+             ></open-data></view>
+
+					</view>
+				</view>
+				<!-- AI回答  -->
+				<view class="chat-news ainews" wx:else>
+					<view class="ai">
+						
+						<image class='new_img' src="../Chat/images/xiaobai-.png"></image>
+					</view>
+					 <view class='you_left'>
+						<block wx:if="{{item.type=='text'}}">
+							<view class='new_txt'>{{item.content}}</view>
+						</block>
+					</view>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+</view>
+<view id="flag"></view>
+<!-- 聊天输入 -->
+<view class="message">
+	
+		<input type="text" auto-focus placeholder="请输入聊天内容.." value="{{massage}}" bindinput='bindChange'></input>
+
+		<button type="primary" bindtap='send'  >发送</button>
+		
+	</view>
+	
+
